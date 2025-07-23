@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giorgi Chubinidze Portfolio | vivi.ge</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(135deg, #f8fafc 0%, #e0e7ef 100%);
+      color: #222;
+      min-height: 100vh;
+    }
+    header {
+      background: #2d3748;
+      color: #fff;
+      padding: 2rem 0 1rem 0;
+      text-align: center;
+      letter-spacing: 2px;
+      font-size: 2.5rem;
+      font-weight: bold;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .intro {
+      text-align: center;
+      margin: 2rem 0 3rem 0;
+      font-size: 1.3rem;
+      color: #444;
+    }
+    .portfolio {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      padding: 0 2rem 3rem 2rem;
+    }
+    .portfolio-box {
+      background: #fff;
+      border-radius: 18px;
+      box-shadow: 0 4px 24px rgba(44, 62, 80, 0.08);
+      width: 270px;
+      min-height: 180px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.3s cubic-bezier(.4,2,.6,1), box-shadow 0.3s;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+    }
+    .portfolio-box:hover {
+      transform: translateY(-12px) scale(1.04) rotate(-1deg);
+      box-shadow: 0 12px 32px rgba(44, 62, 80, 0.18);
+      background: linear-gradient(120deg, #e0e7ef 0%, #f8fafc 100%);
+    }
+    .portfolio-title {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: #2d3748;
+    }
+    .portfolio-desc {
+      font-size: 1rem;
+      color: #555;
+      text-align: center;
+      padding: 0 1rem;
+    }
+    @media (max-width: 800px) {
+      .portfolio {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>vivi.ge</header>
+  <div class="intro">
+    <p>Hello, I'm <strong>Giorgi Chubinidze</strong> from Georgia.<br>
+  </div>
+  <section class="portfolio">
+    <div class="portfolio-box">
+      <div class="portfolio-title">Web Application</div>
+      <div class="portfolio-desc">Modern, responsive web apps built with the latest technologies.</div>
+    </div>
+    <div class="portfolio-box">
+      <div class="portfolio-title">UI/UX Design</div>
+      <div class="portfolio-desc">Clean and user-friendly interfaces for a seamless experience.</div>
+    </div>
+    <div class="portfolio-box">
+      <div class="portfolio-title">API Development</div>
+      <div class="portfolio-desc">Robust and scalable backend APIs for your business needs.</div>
+    </div>
+    <div class="portfolio-box">
+      <div class="portfolio-title">Automation Scripts</div>
+      <div class="portfolio-desc">Custom scripts to automate repetitive tasks and boost productivity.</div>
+    </div>
+  </section>
+</body>
+</html>
